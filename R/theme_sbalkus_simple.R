@@ -4,18 +4,15 @@
 #'
 #' @export
 
-theme_sbalkus <- function(){
-  sysfonts::font_add_google("Abel", "abel")
-  #showtext::showtext_opts(dpi=res)
-  showtext::showtext_auto() #Note; this will cause all future data visualizations to use the showtext rendering; may want to change
-  axis.title.size = 20
-  axis.text.size = 18
-
-
+theme_sbalkus_light <- function(){
+  axis.title.size = 14
+  axis.text.size = 12
+  
+  
   ggplot2::theme(
     # line = element_line(size=1),
     # rect,
-    text = element_text(family = "abel"),
+    # text = element_text(family = "abel"),
     # title,
     # aspect.ratio,
     axis.title = element_text(size=axis.title.size),
